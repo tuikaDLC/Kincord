@@ -9,7 +9,6 @@
     <SelfContained>true</SelfContained>
     <RuntimeIdentifier>win-x64</RuntimeIdentifier>
     <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
-    <ApplicationIcon>Resources\icon.ico</ApplicationIcon>
     <AssemblyName>KintoneDiscordConnector</AssemblyName>
     <RootNamespace>KintoneDiscordConnector</RootNamespace>
   </PropertyGroup>
@@ -21,9 +20,5 @@
     <PackageReference Include="Serilog.Sinks.File" Version="5.0.0" />
     <PackageReference Include="Serilog.Sinks.Console" Version="5.0.1" />
     <PackageReference Include="Polly" Version="8.2.1" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <EmbeddedResource Include="Resources\**\*" />
   </ItemGroup>
 </Project>
