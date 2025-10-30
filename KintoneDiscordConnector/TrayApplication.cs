@@ -11,7 +11,7 @@ public class TrayApplication : ApplicationContext
 {
     private NotifyIcon? _trayIcon;
     private IHost? _webHost;
-    private readonly AppSettings _settings;
+    private readonly AppSettings _settings = null!;
     private bool _isServerRunning = false;
 
     public TrayApplication()
@@ -203,7 +203,7 @@ public class TrayApplication : ApplicationContext
         }
     }
 
-    private async void OnDiagnostics(object? sender, EventArgs e)
+    private void OnDiagnostics(object? sender, EventArgs e)
     {
         try
         {

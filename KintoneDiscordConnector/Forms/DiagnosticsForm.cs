@@ -9,11 +9,11 @@ namespace KintoneDiscordConnector.Forms;
 public partial class DiagnosticsForm : Form
 {
     private readonly AppSettings _settings;
-    private TextBox txtResults;
-    private Button btnRunDiagnostics;
-    private Button btnClose;
-    private ProgressBar progressBar;
-    private Label lblStatus;
+    private TextBox txtResults = null!;
+    private Button btnRunDiagnostics = null!;
+    private Button btnClose = null!;
+    private ProgressBar progressBar = null!;
+    private Label lblStatus = null!;
 
     public DiagnosticsForm(AppSettings settings)
     {

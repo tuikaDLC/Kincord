@@ -11,7 +11,7 @@ public class WebhookController : ControllerBase
     private readonly IDiscordService _discordService;
     private readonly ILogger<WebhookController> _logger;
     private readonly AppSettings _settings;
-    private readonly Action<string>? _onNotificationSent;
+    private Action<string>? _onNotificationSent;
 
     public WebhookController(
         IDiscordService discordService,
