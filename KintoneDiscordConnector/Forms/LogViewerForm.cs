@@ -7,12 +7,12 @@ namespace KintoneDiscordConnector.Forms;
 
 public partial class LogViewerForm : Form
 {
-    private TextBox txtLog;
-    private Button btnRefresh;
-    private Button btnClear;
-    private Button btnOpenFolder;
-    private ComboBox cboLogLevel;
-    private Label lblStatus;
+    private TextBox txtLog = null!;
+    private Button btnRefresh = null!;
+    private Button btnClear = null!;
+    private Button btnOpenFolder = null!;
+    private ComboBox cboLogLevel = null!;
+    private Label lblStatus = null!;
 
     public LogViewerForm()
     {

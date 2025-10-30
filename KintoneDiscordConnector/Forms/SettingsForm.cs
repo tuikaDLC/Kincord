@@ -10,18 +10,18 @@ public partial class SettingsForm : Form
     private readonly AppSettings _settings;
     private readonly TrayApplication _trayApp;
 
-    private TextBox txtKintoneToken;
-    private TextBox txtKintoneSubdomain;
-    private TextBox txtDiscordWebhook;
-    private TextBox txtDiscordUsername;
-    private NumericUpDown numPort;
-    private CheckBox chkStartWithWindows;
-    private CheckBox chkMinimizeToTray;
-    private CheckBox chkShowNotifications;
-    private CheckBox chkAutoStart;
-    private Button btnSave;
-    private Button btnCancel;
-    private Button btnTest;
+    private TextBox txtKintoneToken = null!;
+    private TextBox txtKintoneSubdomain = null!;
+    private TextBox txtDiscordWebhook = null!;
+    private TextBox txtDiscordUsername = null!;
+    private NumericUpDown numPort = null!;
+    private CheckBox chkStartWithWindows = null!;
+    private CheckBox chkMinimizeToTray = null!;
+    private CheckBox chkShowNotifications = null!;
+    private CheckBox chkAutoStart = null!;
+    private Button btnSave = null!;
+    private Button btnCancel = null!;
+    private Button btnTest = null!;
 
     public SettingsForm(AppSettings settings, TrayApplication trayApp)
     {
@@ -44,7 +44,6 @@ public partial class SettingsForm : Form
         int yPos = 20;
         int labelWidth = 150;
         int controlWidth = 300;
-        int spacing = 35;
 
         // kintone設定グループ
         var grpKintone = new GroupBox
@@ -308,7 +307,7 @@ public partial class SettingsForm : Form
         }
     }
 
-    private async void BtnSave_Click(object? sender, EventArgs e)
+    private void BtnSave_Click(object? sender, EventArgs e)
     {
         try
         {
